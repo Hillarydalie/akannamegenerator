@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Raleway&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <title>Akhan Name Generator</title>
-    <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body>
     <div class="jumbotron">
       <h1>Akan Name Generator</h1>
       <!-- This includes the information about the web app -->
-      <div class="contrainer-full col-md-6">
-        <p>
-          Akan names are derived from Ghanian culture.
-          Frequently in Ghana, children are given their first name as a 'day name' which
-          corresponds to the day in the week they were born. These names are commonly 
-          reffered to as <em>Akan Names </em>.
-          <br>
-          <br>
-          Most people do know when their birthdays are, but some might not know what
-          day of the week they were born. Luckily for you, thanks to me, there is a way for you to calculate the day
-          of the week from a specific date. The following is one of the many methods 
-          that exist for that. This application will use your information, mainly your date of birth and gender
-          to generate you "Akan" name.
-        </p>
-      </div>
-      <!-- This includes the text area for the web app -->
-      <div class="contrainer-full col-md-5">
-        <div class="container-full col-md-4 ">
-          <form id = "getVariables">
-            <div class="form-group">
-              <label for="InputNumber">Date of Birth:</label>
-              <input type="date" class="form-control" id="inputDate" name ="birthDate">
-            </div>
+      <div class="row">
+        <div class="contrainer-full col-md-6">
+          <p>
+            Akan names are derived from Ghanian culture.
+            Frequently in Ghana, children are given their first name as a 'day name' which
+            corresponds to the day in the week they were born. These names are commonly 
+            reffered to as <em>Akan Names </em>.
+            <br>
+            <br>
+            Most people do know when their birthdays are, but some might not know what
+            day of the week they were born. Luckily for you, thanks to me, there is a way for you to calculate the day
+            of the week from a specific date. The following is one of the many methods 
+            that exist for that. This application will use your information, mainly your date of birth and gender
+            to generate you "Akan" name.
+          </p>
+        </div>
+        <!-- This includes the text area for the web app -->
+        <div class="contrainer-full col-md-5">
+          <h6>Enter Birthday Date</h6>
+          <div class="container-full col-md-4 ">
+            <form id = "getVariables">
+              <div class="form-group">
+                <label for="InputNumber">Date of Birth:</label>
+                <input type="date" class="form-control" id="inputDate" name ="birthDate">
+              </div>
 
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="personGender" id="femaleChecked" value="F" checked>
-              <label class="form-check-label" for="Radios1">Female</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="personGender" id="maleChecked" value="M">
-              <label class="form-check-label" for="Radios2">Male</label>
-            </div>
-            <button type="submit" class="btn btn-primary" onclick="calulateAkhan()">Submit</button>
-             </form>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="personGender" id="femaleChecked" value="F" checked>
+                <label class="form-check-label" for="Radios1">Female</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="personGender" id="maleChecked" value="M">
+                <label class="form-check-label" for="Radios2">Male</label>
+              </div>
+              <button type="submit" class="btn btn-primary" onclick="calulateAkhan()">Submit</button>
+               </form>
+          </div>
         </div>
       </div>
       <!-- This is our navigation bar located at the bottom-->

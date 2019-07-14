@@ -10,6 +10,7 @@ body {
   width: 100%;
   height: auto;
   font-family: 'Raleway', 'Lora'
+  margin-bottom: 0px !important;
   margin-bottom: 0px;
 }
 
@@ -21,10 +22,15 @@ p {
     font-size: larger;
 }
 
+p#form-label {
+    margin-top: 0px;
+}
+
 h1, .h1 {
     font-size: 2.5rem;
     font-family: raleway;
     text-align: -webkit-left;
+    color: #213944;
 }
 
 h6, .h6 {
@@ -34,4 +40,15 @@ h6, .h6 {
 }
 .contrainer-full.col-md-6 {
     padding: 2%;
+}
+
+button.btn.btn-primary {
+    background-color: #607d8b;
+    color: #fff;
+    border-color: #9E9E9E;
+}
+
+button.btn.btn-primary:hover {
+    color: #000;
+    transform: translateY(10px);
 }

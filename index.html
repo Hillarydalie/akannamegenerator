@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculate Khan</title>
+    <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 style ="color:white;">Welcome to Akhan Name calculator</h1>
+      <p>This program basically calulates your Akhan age based on a Ghanian tradition to name new borns based
+         on the day of the week they were born.Just add your date of birth and gender and you are good to go.You can check with the reference data table at the bottom of the page.Curious? Get started below..</p>
+         <a href="#form" id= "arrowDown">&#8609;</a>
+
+    </div>
+
+    <div class="panel" id= "form">
+     <h1>Enter Your Date & Gender</h1>
+     <form id = "getVariables">
+       <div class="form-group">
+         <label for="InputNumber">Date of Birth:</label>
+         <input type="date" class="form-control" id="inputDate" name ="birthDate">
+       </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="personGender" id="femaleChecked" value="F" checked>
+          <label class="form-check-label" for="Radios1">
+            Female
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="personGender" id="maleChecked" value="M">
+          <label class="form-check-label" for="Radios2">
+            Male
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="calulateAkhan()">Submit</button>
+      </form>
+
+    </div>
+
+    <div class="panel">
+      <p id ="displayName"></p>
+
+    </div>
+
+    <div class="container">
+      <h2>Referrence Data</h2>
+      <p>This shows data for the days with corresponding Akhan names.</p>
+
+      <table class="table  table-dark">
+        <thead>
+          <tr>
+            <th>Day of week</th>
+            <th>male Name</th>
+            <th>Female Name</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Sunday</td>
+            <td>Kwasi</td>
+            <td>Akosua</td>
+          </tr>
+          <tr>
+            <td>Monday</td>
+            <td>Kwadwo</td>
+            <td>Adwoa</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Kwabena</td>
+            <td>Abenaa</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Kwaku</td>
+            <td>Akua</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Yaw</td>
+            <td>Yaa</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Kofi</td>
+            <td>Afua</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>Kwame</td>
+            <td>Ama</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+  <script type="text/javascript" src = "js/main.js"></script>
+  </body>
+</html>

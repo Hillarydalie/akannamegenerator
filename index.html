@@ -5,7 +5,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Lora|Raleway&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-    <title>Akhan Name Generator</title>
+    <title>Akan Name Generator</title>
   </head>
   <body>
     <div class="jumbotron">
@@ -33,44 +33,40 @@
           <div class="container-full col-md-5">
             <form id = "getVariables">
               <div class="form-group">
-                <label for="InputNumber">Date of Birth:</label>
-                <input type="date" class="form-control" id="inputDate" name ="birthDate">
+                <label for="InputNumber"><p>Date of Birth<p></label>
+                <input type="date" class="form-control" id="dateinputform" name ="birthDate">
               </div>
 
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="personGender" id="femaleChecked" value="F" checked>
-                <label class="form-check-label" for="Radios1">Female</label>
+                <input class="form-check-input" type="radio" name="personGender" id="genderFemaleSelected" value="F" checked>
+                <label class="form-check-label" for="Radios1"><p id="form-label">Female</p></label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="personGender" id="maleChecked" value="M">
-                <label class="form-check-label" for="Radios2">Male</label>
+                <input class="form-check-input" type="radio" name="personGender" id="genderMaleSelected" value="M">
+                <label class="form-check-label" for="Radios2"><p id="form-label">Male</p></label>
               </div>
-              <button type="submit" class="btn btn-primary" onclick="calulateAkhan()">Submit</button>
+              <button type="submit" class="btn btn-primary" onclick="generateAkan()">Submit</button>
                </form>
           </div>
         </div>
       </div>
       <!-- This is our navigation bar located at the bottom-->
-      <div class="row">
-        <div class="container">
-          <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar fixed-bottom navbar-expand-lg navbar-light bg-light">
           <div class="collapse navbar-collapse " id="navbarSupportedContent">
             <ul class="navbar-nav col-md-12 justify-content-center">
               <li class="nav-item active ">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Build Web Apps</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="https://moringaschool.slack.com/team/UKQ1NCX27">Contact Us</a>
               </li>
             </ul>
           </div>
-          </nav>      
-        </div>
-      </div>
+      </nav>
     </div>
-  <script type="text/javascript" src = "js/main.js"></script>
+  <script type="text/javascript" src = "js/script.js"></script>
   </body>
 </html>

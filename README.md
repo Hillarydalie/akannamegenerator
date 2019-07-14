@@ -16,7 +16,7 @@ More functionality will be added with time.
 * Christine Njeri https://moringaschool.slack.com/team/UL1M7KHJ8
 * Irene Mercy https://moringaschool.slack.com/team/UL25YQZHT
 * Arusey. https://moringaschool.slack.com/team/UK8AQ25ME
-* License for the icons attached. Titled license.pdf
+* MIT License for the use and improvement of this project attached. Titled LICENSE.txt
 
 ## Setup/Installation Requirements
 * You don't need a server to view or use it, a Web Browser would do. Prefarably Google Chrome. 
@@ -26,6 +26,26 @@ More functionality will be added with time.
 * In the folder open index.html 
 * You would be set up.
 * In case you need to change anything, open on a text editor. If images are to be changed, place the images in the images folder.
+
+##Behaviour Driven Development BDD
+Story: Find your Akan name
+
+As a person interested in knowing your Akhan name
+In order to do so
+I want you to select your day of birth.
+
+Scenario 1: The date is selected from the calender well
+Given that a date is selected, 
+Then we can proceed to select the gender.
+When they are both selected then we can click the submit button.
+Then your Akhan name can be displayed with a pop up of the name.
+
+Scenario 2: The date is not selected from the calender.
+Given that a date is selected, 
+Then we cannot proceed to select the gender.
+Since the submit button will disable if not selected.
+And the function will return an undefined prompt.
+Then one should go back to the date and begin afresh. 
 
 ## License
 * This code is available on the open-source MIT license. See License file attached.

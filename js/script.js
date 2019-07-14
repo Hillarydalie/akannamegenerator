@@ -6,6 +6,7 @@ function generateAkan() {
   //This is an array of the male names
   var maleAkanName = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 
+  //This is an array of the day of the week, this informs the names respectively
   var dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wensday", "Thursday", "Friday", "Sunday"];
 
   //This will grab the input placed in the date section

@@ -26,28 +26,28 @@ More functionality will be added with time.
 * You would be set up.
 * In case you need to change anything, open on a text editor. If images are to be changed, place the images in the images folder.
 
-##Behaviour Driven Development BDD
-* Story: Find your Akan name
+## Behaviour Driven Development BDD
+Story: Find your Akan name
 
-* As a person interested in knowing your Akan name
-* In order to do so
-* I want you to select your day of birth.
-* This date result will be run in our functions to get the century and year.
-* Then this will enable us calculate and find which day of the week one was born.
-* And from this result our function will be able to deliver your Akan name.
+As a person interested in knowing your Akan name
+In order to do so
+I want you to select your day of birth.
+This date result will be run in our functions to get the century and year.
+Then this will enable us calculate and find which day of the week one was born.
+And from this result our function will be able to deliver your Akan name.
 
-* Scenario 1: The date is selected from the calender well
-* Given that a date is selected, 
-* Then we can proceed to select the gender.
-* When they are both selected then we can click the submit button.
-* Then your Akan name can be displayed with a pop up of the name.
+Scenario 1: The date is selected from the calender well
+Given that a date is selected, 
+Then we can proceed to select the gender.
+When they are both selected then we can click the submit button.
+Then your Akan name can be displayed with a pop up of the name.
 
-* Scenario 2: The date is not selected from the calender.
-* Given that a date is selected, 
-* Then we cannot proceed to select the gender.
-* Since the submit button will disable if not selected.
-* And the function will return an undefined prompt.
-* Then one should go back to the date and begin afresh. 
+Scenario 2: The date is not selected from the calender.
+Given that a date is selected, 
+Then we cannot proceed to select the gender.
+Since the submit button will disable if not selected.
+And the function will return an undefined prompt.
+Then one should go back to the date and begin afresh. 
 
 ## License
 * This code is available on the open-source MIT license. See License file attached. Titled LICENSE.txt

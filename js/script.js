@@ -1,13 +1,13 @@
 var century, year, month, date;
 
-document.getElementById('dateinputform').onsubmit = function akanName() { console.log(document.getElementById('dateinputform').value);
+document.getElementById('inputform').onsubmit = function generateAkanName() { console.log(document.getElementById('inputform').value);
 
-var dob = document.getElementById('dateinputform').value;//get the year input from html form.
+var dateOfBrith = document.getElementById('dateOfBrith').value;//get the year input from html form.
 
-century = dob.slice(0,2);//to pick the first two digits of the year input.
-year = dob.slice(2,4);//to pick the last two values of the year input.
-month = document.getElementById('monthinputform').value;//get user input
-date = document.getElementById('birthdayinputform').value;
+century = dateOfBrith.slice(0,2);//to pick the first two digits of the year input.
+year = dateOfBrith.slice(2,4);//to pick the last two values of the year input.
+month = document.getElementById('month').value;//get user input
+date = document.getElementById('day').value;
 
 var gender = document.querySelector('input[name = "gender"]:checked').value;//get value of the checked radio button.
 

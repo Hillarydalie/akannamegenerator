@@ -20,11 +20,17 @@ body {
 }
 
 .form-check {
-    margin-left: 50%;
+    margin-left: 20%;
 }
 
 .form-group {
-    margin-left: 50%;
+    margin-left: 20%;
+}
+
+.form-check p {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 button.btn.btn-primary {
@@ -54,18 +60,21 @@ h6, .h6 {
     font-size: 2rem;
     font-family: raleway;
     text-align: center;
+        margin-top: -5rem;
 }
 .contrainer-full.col-md-6 {
     padding: 2%;
 }
 
-button.btn.btn-primary {
+input#submitButton {
+    margin-left: 20%;
+    margin-top: 1rem;
     background-color: #607d8b;
     color: #fff;
     border-color: #9E9E9E;
 }
 
-button.btn.btn-primary:hover {
+input#submitButton:hover {
     color: #000;
     transform: translateY(10px);
 }

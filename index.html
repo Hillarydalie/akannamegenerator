@@ -33,19 +33,28 @@
           <div class="container-full col-md-5">
             <form id = "getVariables">
               <div class="form-group">
-                <label for="InputNumber"><p>Date of Birth<p></label>
-                <input type="date" class="form-control" id="dateinputform" name ="birthDate">
+                <label for="InputNumber"><p>Year of Birth<p></label>
+                <input type="number" class="form-control" id="dateinputform" name ="birthDate">
               </div>
-
+              <div class="form-group">
+                <label for="monthselection"><p>Month of Birth<p></label>
+                <input type="number" class="form-control" id="monthinputform" name ="birthDate">
+              </div>
+              <div class="form-group">
+                <label for="birthday"><p>Day of Birth<p></label>
+                <input type="number" class="form-control" id="birthdayinputform" name ="birthDate">
+              </div>
+              <p>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="personGender" id="genderFemaleSelected" value="F" checked>
-                <label class="form-check-label" for="Radios1"><p id="form-label">Female</p></label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="personGender" id="genderMaleSelected" value="M">
-                <label class="form-check-label" for="Radios2"><p id="form-label">Male</p></label>
-              </div>
-              <button type="submit" class="btn btn-primary" onclick="generateAkan()">Submit</button>
+                 <input type="radio" id="gender0" name="gender" value="Male">Male<br>
+                 <input type="radio" id="gender1" name="gender" value="Female">Female<br>
+               </div>
+              </p>
+              <input width="30%" type="submit" value="submit" id="akanName" >
+                <div class="form-group">
+                <input type="submit" value="submit" id="submitbutton">
+              <!--
+              <button type="submit" class="btn btn-primary" onclick="generateAkan()">Submit</button> -->
                </form>
           </div>
         </div>

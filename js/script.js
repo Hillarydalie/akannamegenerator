@@ -1,72 +1,36 @@
-function generateAkan() {
+var century, year, month, date;
 
-  //This is an array of the female names
-  var femaleAkanName = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
+document.getElementById('dateinputform').onsubmit = function akanName() { console.log(document.getElementById('dateinputform').value);
 
-  //This is an array of the male names
-  var maleAkanName = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
+var dob = document.getElementById('dateinputform').value;//get the year input from html form.
 
-  //This is an array of the day of the week, this informs the names respectively
-  var dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wensday", "Thursday", "Friday", "Sunday"];
+century = dob.slice(0,2);//to pick the first two digits of the year input.
+year = dob.slice(2,4);//to pick the last two values of the year input.
+month = document.getElementById('monthinputform').value;//get user input
+date = document.getElementById('birthdayinputform').value;
 
-  //This will grab the input placed in the date section
-  var birthdayInput = document.getElementById("dateinputform").value;
+var gender = document.querySelector('input[name = "gender"]:checked').value;//get value of the checked radio button.
 
-  //This will contain gender information from the gender radio buttons
-  var gender ;
 
-  //This statement confirms the radio button confirmation if checked
-  if (document.getElementById('genderFemaleSelected').checked) {
-    //This will check if female radio is checked
-   gender = document.getElementById('genderFemaleSelected').value;
+var maleName = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+
+var femaleName = ["Akosu", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Amna"];
+
+var DD = ["Sunday", "Monday", "Tuesday", "Wednsday", "Thursday", "Friday", "Sunday"];
+
+//This calculation returns a whole number representing the day of the week.
+var dayOfBirth = parseInt(((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10))) % 7;
+
+//control flows to check whether the person is male or female.
+if(gender === "Male"){
+ var mName = maleName[dayOfBirth - 1]// -1 because index numbers begin from 0 and not 1
+ var day = DD[dayOfBirth -1]
+ alert(" You were born on a " + day + "." + " Your name is "+ mName);
    }
-   else if(document.getElementById('genderMaleSelected').checked){
-     //This will check if male radio is checked
-     gender = document.getElementById('genderMaleSelected').value;
-
+else if (gender === "Female") {
+   var fName = femaleName[dayOfBirth - 1]
+   var day = DD[dayOfBirth - 1]
+   alert(" You were born on " + day + "." + " Your name is "+ fName);
+   //mainForm.akanname.value = " You were born on " + day + "." + " Your name is "+ fName[];
    }
-
-  // Will slice dateinput to get century details
-  var century = parseInt(birthdayInput.slice(0,2));
-
-  //Will slice dateinput to get year details
-  var year = parseInt(birthdayInput.slice(2,4));
-
-  //Will slice dateinput to get month details
-  var month = parseInt(birthdayInput.slice(5,7));
-
-  //Will slice dateinput to get day details
-  var day = parseInt(birthdayInput.slice(8,10));
-
-
-
-  //This formula will calculate the excact day of the week of birth
-  var dayOfBirth = parseInt(((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + day) % 7;
-
-  //Will check if gender selected is male
-  if (gender ==="M"){
-    
-    //Will find out value of gender by index [dayOfBirth-1]
-    var mAkanName =  maleAkanName[dayOfBirth -1];
-
-    //Will print the alert of the Akan name if male
-    alert("Your Akhan Name is "+ mAkanName);
-
-    //This should publish the Akan name in our paragraph id *not working yet*
-    document.getElementById("displayName").innerHTML =  "Your Akhan Name is "+ mAkanName;
-
-  } 
-  //Will check if gender selected is female
-   else {
-
-    //Will find out value of gender by index [dayOfBirth-1]
-    var fAkanName = femaleAkanName[dayOfBirth -1];
-
-    //Will print the alert of the Akan name if female
-    alert("Your Akhan Name is "+ fAkanName);
-
-    //This should publish the Akan name in our paragraph id *not working yet*
-    document.getElementById("displayName").innerHTML = "Your Akhan Name is "+ fAkanName;//write value in html element p
-  }
-
 }
